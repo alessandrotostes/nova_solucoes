@@ -318,7 +318,22 @@ footer:hover .fa-heart {
   position: absolute;
   border-radius: 8px; /* Garante que o iframe também tenha bordas arredondadas */
 }
-
+.btn-custom-gold {
+  background-color: var(--cor-ouro-principal);
+  border-color: var(--cor-ouro-principal);
+  color: var(--cor-preto-fundo);
+  padding: 12px 30px;
+  margin-left: 13px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.2s ease;
+}
+.btn-outline-gold {
+  color: var(--cor-ouro-principal);
+  border-color: var(--cor-ouro-principal);
+  padding: 12px 30px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
 /* Ajustes de padding no footer para acomodar as novas secções */
 footer.bg-dark-2 {
   padding-top: 3rem !important; /* Aumentar padding superior */

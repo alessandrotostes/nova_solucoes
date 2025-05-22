@@ -1,0 +1,49 @@
+/* Ajustes para garantir responsividade da imagem de fundo */
+.hero-section {
+  min-height: 100vh;
+  background: url(../images/logo-dourada-nova.png) no-repeat center center;
+  background-size: 150vh;
+  /* background-size: cover; */
+  position: relative;
+  background-position: center center;
+}
+
+/* Ajustes para melhorar a responsividade da secção de portas pivotantes */
+@media (max-width: 767.98px) {
+  .portas-pivotantes-section {
+    padding: 4rem 0 3rem;
+  }
+
+  .portas-pivotantes-image {
+    margin-top: 2rem;
+  }
+
+  .portas-feature-item {
+    padding: 1rem;
+  }
+
+  .portas-cta .btn {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  .portas-cta .btn:first-child {
+    margin-right: 0 !important;
+  }
+}
+
+/* Garantir que a imagem de fundo fique centralizada em todos os dispositivos */
+@media (max-width: 991.98px) {
+  .hero-section {
+    background-position: center center !important;
+  }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1600px) {
+  .hero-section {
+    background-size: cover;
+    background-position: center center;
+  }
+}

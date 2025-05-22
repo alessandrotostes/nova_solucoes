@@ -1,0 +1,56 @@
+/* Estilos específicos para a página de Informações Técnicas */
+
+#informacoes-tecnicas .accordion-item {
+    border: none; /* Remover bordas padrão do accordion */
+    margin-bottom: 10px;
+    border-radius: 0.3rem;
+    overflow: hidden; /* Para que o border-radius funcione com o ::before */
+}
+
+#informacoes-tecnicas .accordion-button {
+    font-size: 1.1rem;
+    padding: 1rem 1.25rem;
+    box-shadow: none !important; /* Remover sombra do botão do accordion */
+    transition: background-color 0.3s ease;
+}
+
+#informacoes-tecnicas .accordion-button:not(.collapsed) {
+    background-color: var(--cor-ouro-principal) !important;
+    color: var(--cor-preto-fundo) !important;
+}
+
+#informacoes-tecnicas .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23121212'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+}
+
+#informacoes-tecnicas .accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(27%) saturate(937%) hue-rotate(350deg) brightness(90%) contrast(88%); /* Cor do ícone para dourado claro */
+}
+
+#informacoes-tecnicas .accordion-button:not(.collapsed):hover {
+    background-color: var(--cor-ouro-hover) !important;
+}
+
+#informacoes-tecnicas .accordion-button:hover {
+    background-color: rgba(212, 175, 55, 0.1); /* Leve destaque dourado no hover */
+}
+
+#informacoes-tecnicas .accordion-body {
+    padding: 1.25rem;
+    background-color: var(--cor-preto-secundario); /* Fundo um pouco diferente para o corpo */
+}
+
+.info-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-list .fas {
+    width: 20px; /* Alinhar ícones */
+}
+
+#informacoes-tecnicas img {
+    border: 3px solid var(--cor-ouro-principal);
+}
+

@@ -807,6 +807,16 @@ footer.bg-dark-2 {
     align-items: center;
     justify-content: center;
   }
+  .btn-custom-gold {
+    background-color: var(--cor-ouro-principal);
+    border-color: var(--cor-ouro-principal);
+    color: var(--cor-preto-fundo);
+    padding: 12px 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease,
+      transform 0.2s ease;
+  }
 }
 
 /* Ajustes para telas muito grandes */
